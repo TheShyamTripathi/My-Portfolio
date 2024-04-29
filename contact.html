@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Umiversity Website- Design </title>
+</head>
+<body>
+    <!-- Main Page -->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="/Images/images.png" alt="am logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">Projects</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Get-In Touch</h1>
+    
+    </section>
+
+<!-- contact US content -->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.4149036389836!2d80.02368187321562!3d13.261992708448904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52814946112d6f%3A0x57a644f6f25f9b0c!2sAmrita%20Vishwa%20Vidyapeetham%20Chennai!5e0!3m2!1sen!2sin!4v1713187725702!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</section>
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5 style="font-size:16px; font-weight: 600;">Periyapalayam Road State Highway 50A <br> Amrita Vishwa Vidyapeetham Chennai-campus</h5>
+                    <p>Chennai, Tamilnadu, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5 style="font-size:16px; font-weight: 600;">+91 8838312158</h5>
+                    <p>Monday to saturday, 10am to 6pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5 style="font-size:16px; font-weight: 600;"> <a href="mailto:shyamtripathi373@gmail.com" style="text-decoration: none;">shyamtripathi373@gmail.com</a></h5>
+                    <p>Email me your query</p>
+                </span>
+            </div>
+            
+        </div>
+    
+        <div class="contact-col">
+            <form id="myForm" action="">
+                <input type="text" id="nameInput" placeholder="Enter Your name" required>
+                <input type="email" id="emailInput" placeholder="Enter Your mail-id" required>
+                <input type="text" id="subjectInput" placeholder="Enter Your subject" required>
+                <textarea rows="8" id="messageInput" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    
+    </div>
+    
+
+</section>
+<!-- footer -->    <section class="footer">
+        <h4>About Me</h4>
+        <p>Hello! I'm Shyam, a first-year BTech student at Amrita Vishwa Vidyapeetham, pursuing Computer Science and Engineering with a current SGPA of 8.71. With a background in Science (Computer Science) from Kalika Manavgyan Secondary School, Nepal, and excellent academic achievements, I am passionate about applying my theoretical knowledge in practical settings. Eager to contribute to innovative projects and enhance my skills in Programming, AI development, and machine Learning.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/shyam.tripathi.75248" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://discord.com/invite/Z9uACzpx" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/AgritShyamBatuk0373" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shyam-tripathi-4926642a8/ " target="#"><i class="fa-brands fa-linkedin-in "></i></a>
+           <a href="https://wa.me/qr/7Q3NQDJJGRVIB1"> <i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:shyamtripathi373@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+        </div>
+        <p class="f"> Made with <i class="fa-solid fa-heart" style="color: #f44326;"></i> by Shyam Tripathi.</p>
+    </section>
+    
+
+    <script>
+
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right='-250px';
+        }       
+    </script>
+    
+        <script src="form2.js"></script>
+</body>
+</html>

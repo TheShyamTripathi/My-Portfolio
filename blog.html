@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Umiversity Website- Design </title>
+</head>
+<body>
+    <!-- Main Page -->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="/Images/images.png" alt="am logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">Projects</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Unveiling BTech's First-Year Essentials: Projects and Courses</h1>
+    
+    </section>
+
+<!-- Blog page content -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="blog.jpeg" alt="blog-photo">
+            <h2>Exploring the Foundational Pillars of BTech: A Journey through First-Year Projects and Coursework</h2>
+            <p>In the first year of BTech, students are introduced to a plethora of subjects that lay the foundation for their future endeavors in the field of technology. Among these, <strong>Java Programming</strong> stands out as a fundamental language, teaching students the principles of <strong>object-oriented programming</strong> and problem-solving.</p>
+
+            <p><strong>Python Programming</strong>, another essential course, empowers students with the versatility and simplicity of Python, a language renowned for its readability and vast application in various domains such as data science, machine learning, and web development.</p>
+
+            <p><strong>Computer-Aided Design (CAD)</strong> forms the backbone of engineering design, allowing students to visualize and simulate complex structures and mechanisms. Through CAD, students learn to translate their creative ideas into precise technical drawings.</p>
+
+            <p><strong>Cisco Networking</strong> equips students with the knowledge and skills required to design, implement, and manage computer networks. In an increasingly interconnected world, this knowledge is invaluable, as it underpins the functioning of modern-day communication systems.</p>
+
+            <p><strong>Front-End Web Development</strong> introduces students to the art of creating visually appealing and interactive web interfaces. With the ever-growing demand for web-based applications, proficiency in front-end development is a highly sought-after skill in the tech industry.</p>
+
+            <p><strong>C Programming</strong>, although a bit more challenging, provides students with a solid understanding of programming fundamentals and system-level programming. Mastery of C lays the groundwork for tackling complex software and embedded systems projects.</p>
+
+            <p>Lastly, <strong>virtual internships</strong> offer students a taste of real-world industry experience from the comfort of their classrooms. These internships provide an opportunity to apply theoretical knowledge to practical projects, fostering critical thinking and problem-solving skills.</p>
+
+
+        </div>
+
+        <div class="blog-right">
+            <h3>Projects and Works</h3>
+            <div>
+                <span>Java Programminng</span>
+                <span>7</span>
+            </div>
+            <div>
+                <span>Python Programming</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Computer-Aided Design(CAD)</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>Cisco Networking</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Front-End Webdevlopment </span>
+                <span>14</span>
+            </div>
+            <div>
+                <span>C Programming</span>
+                <span>5</span>
+            </div>
+            <div>
+                <span>Virtual Internship</span>
+                <span>4</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="comment-box">
+        <h3>Leave a comment</h3>
+
+        <form class="comment-form" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Enter Name">
+            <span id="nameError" class="error-message"></span>
+            <br><br>
+            <input type="email" id="email" placeholder="Enter Email">
+            <span id="emailError" class="error-message"></span>
+            <br><br>
+            <textarea id="comment" cols="30" rows="5" placeholder="Your comment"></textarea>
+            <br><br>
+            <button type="submit" class="hero-btn red-btn a1">POST COMMENT</button>
+        </form>
+    </div>
+</section>
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Hello! I'm Shyam, a first-year BTech student at Amrita Vishwa Vidyapeetham, pursuing Computer Science and Engineering with a current SGPA of 8.71. With a background in Science (Computer Science) from Kalika Manavgyan Secondary School, Nepal, and excellent academic achievements, I am passionate about applying my theoretical knowledge in practical settings. Eager to contribute to innovative projects and enhance my skills in Programming, AI development, and machine Learning.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/shyam.tripathi.75248" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://discord.com/invite/Z9uACzpx" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/AgritShyamBatuk0373" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shyam-tripathi-4926642a8/ " target="#"><i class="fa-brands fa-linkedin-in "></i></a>
+           <a href="https://wa.me/qr/7Q3NQDJJGRVIB1"> <i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:shyamtripathi373@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+        </div>
+        <p class="f"> Made with <i class="fa-solid fa-heart" style="color: #f44326;"></i> by Shyam Tripathi.</p>
+    
+    </section>
+
+
+    <script>
+
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right='0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right='-250px';
+        }       
+    </script>
+    <script src="from1.js"></script>
+</body>
+</html>
