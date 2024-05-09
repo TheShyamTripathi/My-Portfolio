@@ -417,7 +417,7 @@ h3{
 .cta, .cta1{
     width:80%;
     margin: 100px auto;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(banner1.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(banner1.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
