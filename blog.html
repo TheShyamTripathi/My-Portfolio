@@ -92,13 +92,13 @@
 
         <form class="comment-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value = "e4e53f92-1f62-4db8-8e46-418beaf1197b">
-            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="name" name = "name" placeholder="Enter Name">
             <span id="nameError" class="error-message"></span>
             <br><br>
-            <input type="email" id="email" placeholder="Enter Email">
+            <input type="email" id="email" name="email" placeholder="Enter Email">
             <span id="emailError" class="error-message"></span>
             <br><br>
-            <textarea id="comment" cols="30" rows="5" placeholder="Your comment"></textarea>
+            <textarea name="message" id="comment" cols="30" rows="5" placeholder="Your comment"></textarea>
             <br><br>
             <button type="submit" class="hero-btn red-btn a1">POST COMMENT</button>
         </form>
