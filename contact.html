@@ -67,7 +67,8 @@
         </div>
     
         <div class="contact-col">
-            <form id="myForm" action="">
+            <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value = "e4e53f92-1f62-4db8-8e46-418beaf1197b">
                 <input type="text" id="nameInput" placeholder="Enter Your name" required>
                 <input type="email" id="emailInput" placeholder="Enter Your mail-id" required>
                 <input type="text" id="subjectInput" placeholder="Enter Your subject" required>
@@ -95,19 +96,6 @@
     </section>
     
 
-    <script>
 
-        let navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right='0';
-        }
-
-        function hideMenu(){
-            navLinks.style.right='-250px';
-        }       
-    </script>
-    
-        <script src="form2.js"></script>
 </body>
 </html>

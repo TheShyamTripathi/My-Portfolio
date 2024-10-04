@@ -90,7 +90,8 @@
     <div class="comment-box">
         <h3>Leave a comment</h3>
 
-        <form class="comment-form" onsubmit="return validateForm()">
+        <form class="comment-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value = "e4e53f92-1f62-4db8-8e46-418beaf1197b">
             <input type="text" id="name" placeholder="Enter Name">
             <span id="nameError" class="error-message"></span>
             <br><br>
@@ -121,18 +122,4 @@
     </section>
 
 
-    <script>
-
-        let navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right='0';
-        }
-
-        function hideMenu(){
-            navLinks.style.right='-250px';
-        }       
-    </script>
-    <script src="from1.js"></script>
-</body>
 </html>
