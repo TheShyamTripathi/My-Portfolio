@@ -73,14 +73,14 @@ button {
   }
 
   .container:hover .background {
-    opacity: 0;
-    width: 100%;
+    opacity: 1;
+    width: 75%;
   }
 
-  .container:hover .video {
+  /* .container:hover .video {
     opacity: 1;
     top: 20px;
-  }
+  } */
 
 
 
@@ -106,7 +106,7 @@ button {
 
 @keyframes border1 {
     0% { border-color: blue; } 
-    20% { border-color: rgb(0, 183, 255); } 
+    20% { border-color: rgba(0, 183, 255, 0.368); } 
     40% { border-color: rgb(195, 255, 0); } 
     60% { border-color: rgb(0, 255, 132); } 
     80% { border-color: rgb(247, 0, 255); }   
@@ -191,8 +191,8 @@ th, td {
 
 
 tr:hover {
-    background-image: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #73ff00, #00ffb1, #0077ff, #a100ff); 
-    color: blue; 
+    background-image: linear-gradient(to right, #ff000034, #ff73002d, #fffb0050, #73ff00, #00ffb358, #0077ff5f, #a100ff); 
+    color: rgb(0, 0, 255); 
 }
 
 @media (max-width:700px) {
